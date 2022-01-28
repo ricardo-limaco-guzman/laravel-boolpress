@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    color: none;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+// Root
+:root {
+  --bs-primary-rgb: 74, 124, 133;
+}
+
+// Btn
+.btn-primary {
+  color: #fff;
+  background-color: #4a7c85!important;
+  border-color: #4a7c85!important;
+  transition: 1s;
+  &:hover{ 
+    background-color: #396269!important;
+    border-color: #396269!important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgb(74 124 133 / 50%);
+  }
+}
+
+.btn-link {
+  font-weight: 400;
+  color: #4a7c85!important;
+  text-decoration: underline;
+  transition: 1s;
+  &:hover{ 
+    color: #396269!important;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgb(74 124 133 / 25%);
+  }
+}
+
+
+.dropdown-item {
+  &:focus, &:active, &:hover {
+    background-color: white!important;
+    color: #396269!important;
+  }
+}
+
+
+// Form
+.form-check-input:checked {
+  background-color: #4a7c85!important;
+  border-color: #4a7c85!important;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #4a7c85!important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(57, 113, 122, 0.25)!important;
+}
+
+// input:-internal-autofill-selected {
+//   appearance: menulist-button;
+//   background-image: none !important;
+//   background-color: -internal-light-dark(rgb(232, 240, 254), rgba(74, 124, 133, 0.4)) !important;
+//   color: -internal-light-dark(black, white) !important;
+// }
+
