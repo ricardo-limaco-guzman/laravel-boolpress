@@ -12,28 +12,46 @@
             <ul>
               <li><a href="/">Home</a></li>
               <li><a href="/login">Login</a></li>
-              <li><a href="/register">Registrazione</a></li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-5 text-center">
-      <h3>ancora nessun contenuto</h3>
+  <!-- Section Post -->
+    <section>
+      <div class="bg-primary text-center"><h1 class="text-white fw-bold py-4">Ultimi Post</h1></div>
+      <div class="container p-2">
+        <div class="row pt-5">
+
+        <Post v-for="post in postsList" :key="post.id" :post="post"></Post>
+        </div>
+      </div>
     </section>
 
   </section>
 </template>
 
+
 <script>
+import Post from "../components/partials/Post.vue";
+
 export default {
   name: "App",
+  components: { Post },
   data() {
     return {
       msg: "Benvenuto",
+      postsList: [],
     };
+  },
+  mounted() {
+    window.axios.get("/api/posts").then((resp) => {
+      this.postsList = resp.data;
+    });
   },
 };
 </script>
 
+<style scoped>
+</style>
