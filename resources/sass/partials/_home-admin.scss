@@ -1,0 +1,65 @@
+._admin-home {
+  display: flex;
+  flex-wrap: nowrap;
+
+
+  /// Sidebar admin ///
+  ._sidebar-admin {
+    background-color: $color-green;
+    width: 180px;
+    min-width: 100px;
+    height: auto;
+    min-height: calc(100vh - 75.99px);
+    padding: 50px 35px;
+    color: white;
+
+    li {
+      padding: 8px 0;
+      a {
+        color: white;
+        transition: 0.8s;
+        &:hover {
+          transform: translateX(10px);
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  /// Main admin ///
+  ._main-admin {
+    padding: 30px 0 100px;
+    width: 100%;
+    height: 100%;
+
+    // Hero avatar
+    ._avatar-hero {
+      background-image: url("/img/avatar-hero.jpg");
+      background-size: cover;
+      background-position-y: center;
+      height: 200px;
+      border-radius: 25px;
+
+      // Avatar
+      ._avatar-img {
+        width: 150px;
+        position: relative;
+        transform: translate(50px, 125px);
+        img {
+          width: 100%;
+          border-radius: 100%;
+        }
+        ._avatar-name {
+          position: absolute;
+          bottom: 8px;
+          right: 0;
+          background-color: $color-green;
+          color: white;
+          padding: 6px 10px;
+          border-radius: 20px;
+        }
+      }
+    }
+  
+  }
+}

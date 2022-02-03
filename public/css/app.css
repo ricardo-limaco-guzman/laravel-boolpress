@@ -12270,6 +12270,14 @@ p {
   box-shadow: 0 0 0 0.25rem rgba(57, 113, 122, 0.25) !important;
 }
 
+.form-select:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #4a7c85 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(57, 113, 122, 0.25) !important;
+}
+
 ._guest-home ._hero-image {
   background-image: url("/img/hero.jpg");
   background-size: cover;
@@ -12306,6 +12314,70 @@ p {
 
 ._guest-home ._hero-image ._nav-bar li a:hover {
   transform: scale(1.1);
+}
+
+._admin-home {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+._admin-home ._sidebar-admin {
+  background-color: #4a7c85;
+  width: 180px;
+  min-width: 100px;
+  height: auto;
+  min-height: calc(100vh - 75.99px);
+  padding: 50px 35px;
+  color: white;
+}
+
+._admin-home ._sidebar-admin li {
+  padding: 8px 0;
+}
+
+._admin-home ._sidebar-admin li a {
+  color: white;
+  transition: 0.8s;
+}
+
+._admin-home ._sidebar-admin li a:hover {
+  transform: translateX(10px);
+  font-weight: 700;
+}
+
+._admin-home ._main-admin {
+  padding: 30px 0 100px;
+  width: 100%;
+  height: 100%;
+}
+
+._admin-home ._main-admin ._avatar-hero {
+  background-image: url("/img/avatar-hero.jpg");
+  background-size: cover;
+  background-position-y: center;
+  height: 200px;
+  border-radius: 25px;
+}
+
+._admin-home ._main-admin ._avatar-hero ._avatar-img {
+  width: 150px;
+  position: relative;
+  transform: translate(50px, 125px);
+}
+
+._admin-home ._main-admin ._avatar-hero ._avatar-img img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+._admin-home ._main-admin ._avatar-hero ._avatar-img ._avatar-name {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  background-color: #4a7c85;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 20px;
 }
 
 header ._nav-bar {
