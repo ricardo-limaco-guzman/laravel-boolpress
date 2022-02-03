@@ -12,7 +12,7 @@
             <img src="/img/img-register.jpg" alt="login" class="w-100 h-100 rounded-start" style="object-fit: cover">
           </div>
 
-          <!-- Text area -->
+          <!-- Box register -->
           <div class="col-6 d-flex flex-column justify-content-center">
 
             <h3 class="text-primary fw-bold text-center _title-form">Registrazione</h3>
@@ -93,7 +93,6 @@
                   </button>
                 </div>
               </div>
-
             </form>
 
           </div>
@@ -102,24 +101,6 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 {{--

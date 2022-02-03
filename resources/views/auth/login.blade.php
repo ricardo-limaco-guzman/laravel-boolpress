@@ -11,14 +11,8 @@
           <div class="col-6">
             <img src="/img/img-login.jpg" alt="login" class="w-100 h-100 rounded-start" style="object-fit: cover">
           </div>
-          {{-- <div class="col-6">
-            <div class="ratio ratio-1x1">
-              <img src="/img/img-login.jpg" alt="login" class="image-fluid rounded-start w-100 h-100"
-                style="object-fit: cover">
-            </div>
-          </div> --}}
 
-          <!-- Text area -->
+          <!-- Box login -->
           <div class="col-6 d-flex flex-column justify-content-center">
 
             <h3 class="text-primary fw-bold text-center _title-form">Login</h3>
@@ -87,7 +81,6 @@
                   @endif
                 </div>
               </div>
-
             </form>
 
           </div>
